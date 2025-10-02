@@ -1,4 +1,4 @@
-# 📸 FotoApp
+# 📸 FotoApp -DOMENICO ALEJANDRO
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Pillow](https://img.shields.io/badge/Pillow-Image%20Processing-4B8BBE)](https://python-pillow.org/)
@@ -66,3 +66,66 @@ source .venv/bin/activate
 
 # 3) Dependencias
 pip install -r requirements.txt
+
+▶️ Uso
+Opción A: por menú (modo usuario)
+python fotoapp.py
+
+
+1 Redimensionar (pide ruta + plataforma)
+
+2 Ajustar contraste (requiere haber hecho 1)
+
+3 Aplicar filtro (requiere haber hecho 1)
+
+4 Generar boceto (requiere haber hecho 1)
+
+5 Salir
+
+Opción B: como librería (modo programador)
+from fotoapp import redimensionar_imagen, ajustar_contraste, aplicar_filtro, generar_boceto
+
+# redimensionar y mostrar
+img = redimensionar_imagen("input.jpg", "Instagram")
+
+# contraste (guarda 'contraste_ajustado.png')
+ajustar_contraste("input.jpg")
+
+# filtros (genera 'imagen_<FILTRO>.png' + 'todos_los_filtros.png')
+aplicar_filtro("input.jpg", "SHARPEN")
+
+# boceto (guarda 'boceto_generado.png')
+generar_boceto("input.jpg")
+
+🧪 Tips y troubleshooting
+
+Ruta inválida: el script valida que exista el archivo e informa el error. 
+
+fotoapp
+
+Plataforma no válida en redimensionado: se sugiere una de las 4 soportadas. 
+
+fotoapp
+
+Bloqueo en menú: recordá ejecutar primero la opción 1 (redimensionar) para habilitar 2–4. 
+
+fotoapp
+
+OpenCV en notebooks: si corrés en Colab/Jupyter, plt.show() abre las figuras; en server headless podés revisar los archivos guardados.
+
+🗺️ Roadmap
+
+ Guardar automáticamente la imagen redimensionada (con nombre consistente).
+
+ Añadir recortes inteligentes (smart crop) por composición.
+
+ CLI con argparse (modo sin menú).
+
+ Soporte de lotes (carpetas completas).
+
+ Dockerfile para despliegue reproducible.
+
+🧾 Licencia
+
+MIT — libre para usar, aprender y mejorar.
+Made with curiosity.
