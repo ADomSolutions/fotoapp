@@ -49,6 +49,14 @@
 - La imagen redimensionada se **muestra**; si querés guardarla descomentá la línea `save(...)` en `redimensionar_imagen`. :contentReference[oaicite:6]{index=6}
 
 ---
+## 📸 Capturas
+![4](https://github.com/user-attachments/assets/41c71fc8-1d5a-46dc-bc0b-f744414aaf9e)
+![3](https://github.com/user-attachments/assets/0034bf7a-762e-41cf-96da-72fdff80a4df)
+![2](https://github.com/user-attachments/assets/472bdcc6-a19a-4a8c-bd77-de80c7b53b45)
+![1](https://github.com/user-attachments/assets/40d43152-ee7e-4d9c-aeca-3ca80939f386)
+
+
+
 
 ## ⚙️ Instalación
 
